@@ -1,4 +1,6 @@
-﻿namespace pcso_jem_mobile;
+﻿using pcso_jem_mobile.View;
+
+namespace pcso_jem_mobile;
 
 public partial class App : Application
 {
@@ -6,6 +8,8 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new AppShell();
+        MainPage = new AppShell();
+        Shell.Current.GoToAsync("//Login");
+
 	}
 }

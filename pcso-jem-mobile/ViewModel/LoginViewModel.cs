@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
 
-namespace pcso_jem_mobile.ViewModel
+namespace pcso_jem_mobile.ViewModel;
+
+public partial class LoginViewModel : BaseViewModel
 {
-    internal class LoginViewModel
-    {
-    }
+    [ObservableProperty]
+    private string username;
 }
