@@ -6,21 +6,21 @@
              Routing.Route="Root"
              Title="Root">
 
-    <!--TabBar
+    <TabBar
         Route="Tabs">
         <Tab
             Title="Home"
             Icon="home.png">
             <ShellContent 
-                ContentTemplate="{DataTemplate views:HomeMoviesPage}"/>
+                ContentTemplate="{DataTemplate views:HomePage}"/>
         </Tab>
         <Tab 
             Title="Profile"
-            Icon="person.png">
+            Icon="profile.png">
             <ShellContent 
                 ContentTemplate="{DataTemplate views:ProfilePage}" />
         </Tab>
-    </TabBar-->
+    </TabBar>
 
     <TabBar
         Shell.TabBarIsVisible="False"

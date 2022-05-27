@@ -23,6 +23,7 @@
             Placeholder="Type password"
             IsPassword="true"/>
         <Button
+            Command="{Binding GoToHomeCommand}"
             Margin="20,0,20,20"
             Text="Submit"
             FontSize="30"/>
