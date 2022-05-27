@@ -5,7 +5,6 @@
              x:Class="pcso_jem_mobile.View.LoginPage"
              Title="LoginPage">
     <StackLayout>
-
         <Label 
             FontSize="40"
             Text="Login"

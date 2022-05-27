@@ -9,5 +9,18 @@
                 Text="Home"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
+        <CollectionView
+            Background="White"
+            ItemsSource="{Binding Chatmessages}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label
+                        TextColor="Black"
+                        FontSize="20"
+                        Margin="20"
+                        Text="{Binding}"/>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </StackLayout>
 </ContentPage>

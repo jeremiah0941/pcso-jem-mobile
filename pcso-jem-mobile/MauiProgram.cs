@@ -3,24 +3,25 @@ using CommunityToolkit.Maui.Core;
 using CommunityToolkit.Maui.Markup;
 using pcso_jem_mobile.View;
 using pcso_jem_mobile.ViewModel;
-using pcso_jem_mobile;
+
+namespace pcso_jem_mobile;
 
 public static class MauiProgram
 {
-	public static MauiApp CreateMauiApp()
-	{
-		var builder = MauiApp.CreateBuilder();
+    public static MauiApp CreateMauiApp()
+    {
+        var builder = MauiApp.CreateBuilder();
         builder.UseMauiApp<App>()
 
-            .UseMauiCommunityToolkit()
-            .UseMauiCommunityToolkitMarkup()
-            .UseMauiCommunityToolkitCore()
+        .UseMauiCommunityToolkit()
+        .UseMauiCommunityToolkitMarkup()
+        .UseMauiCommunityToolkitCore()
 
-            .ConfigureFonts(fonts =>
-            {
-				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			});
+        .ConfigureFonts(fonts =>
+        {
+            fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+            fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+        });
 
         builder.Services.AddSingleton<LoginViewModel>();
         builder.Services.AddSingleton<LoginPage>();
@@ -32,5 +33,5 @@ public static class MauiProgram
         builder.Services.AddSingleton<ProfilePage>();
 
         return builder.Build();
-	}
+    }
 }
